@@ -1,74 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
-    <header>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Get in Touch</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="blog-header">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a class="current" href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1>blog</h1>
+            </div>
         </header>
-        <main>
+        <main class="blog-post">
             <aside>
                 <figure>
-                    <img src="" alt="">
+                    <img
+                        src="./the-restaurant-mall-assets/blog-side-image.jpg"
+                        alt=""
+                    />
+                    <div class="recent-posts-container">
+                        <h4>Featured</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas in, architecto nesciunt.
+                        </p>
+                        <h4>recent posts</h4>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor sit</a></li>
+                            <li><a href="">Lorem ipsum dolor sit</a></li>
+                            <li><a href="">Lorem ipsum dolor sit</a></li>
+                            <li><a href="">Lorem ipsum dolor sit</a></li>
+                        </ul>
+                    </div>
                 </figure>
-                <div>
-                    <h3></h3>
-                    <p></p>
-                    <h3></h3>
-                    <ul></ul>
-                </div>
-            <aside>
+            </aside>
             <section>
-                <figure>
-                    <img src="" alt="">
+                <figure class="image-overlap">
+                    <img
+                        src="./the-restaurant-mall-assets/blog-post-image.jpg"
+                        alt=""
+                    />
                 </figure>
                 <div class="border-container">
-                    <article>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
+                    <article class="wrapper">
+                        <h2>Employment opportunities</h2>
+                        <p class="date employment">
+                            <strong>October 30, 2020 by Sulaire</strong>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Reprehenderit atque, nemo ea corrupti repellat
+                            rem maiores voluptatem, repellendus iusto illum
+                            mollitia placeat adipisci eos delectus sapiente
+                            nulla blanditiis fugit ullam laborum dolore numquam
+                            error hic.
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Suscipit unde culpa voluptas reprehenderit
+                            nihil, atque repudiandae id deserunt laboriosam
+                            labore distinctio maiores quam odit molestiae nemo?
+                            In maxime exercitationem qui natus magnam iste
+                            commodi sint est recusandae, asperiores enim
+                            provident architecto eius dolor necessitatibus eos!
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Eos impedit, obcaecati nesciunt minima veniam
+                            ab blanditiis ipsam aliquam ut odio suscipit
+                            corporis quia, enim minus tempora! Quasi veritatis
+                            quam atque ipsa veniam! Similique consectetur neque
+                            error est autem dolore distinctio temporibus! Error
+                            placeat quibusdam consequuntur dolorum dolor nobis
+                            atque libero cumque deleniti, recusandae quas
+                            architecto, nesciunt reiciendis hic itaque nihil?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Unde dolore ex quia soluta magnam? Impedit
+                            earum sunt accusantium molestias autem.
+                        </p>
                     </article>
                 </div>
                 <div class="comments">
-                    <h2></h2>
+                    <h3>comments:</h3>
                     <div class="comment-one">
                         <figure>
-                            <img src="" alt="">
+                            <img
+                                src="./the-restaurant-mall-assets/comment-1.jpg"
+                                alt=""
+                            />
                         </figure>
-                        <p></p>
-                        <p></p>
+                        <div class="comment-text wrapper">
+                            <p class="date">Tuesday October 9th, by Ali</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui, neque? Facere ab
+                                consectetur nesciunt quo maiores culpa
+                                voluptatibus impedit laborum!
+                            </p>
+                        </div>
                     </div>
                     <div class="comment-two">
                         <figure>
-                            <img src="" alt="">
+                            <img
+                                src="./the-restaurant-mall-assets/comment-2.jpg"
+                                alt=""
+                            />
                         </figure>
-                        <p></p>
-                        <p></p>
+                        <div class="comment-text wrapper">
+                            <p class="date">
+                                Wednesday October 10th, 2019 by Lisa
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Consequuntur mollitia
+                                asperiores molestias in, iste a.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <form action="">
+                <form action="make-comment">
                     <fieldset>
-			        <legend>Make a comment</legend>
-                    <label for=""></label>
-                    <input type="text" name="" id>
-                    <label for=""></label>
-                    <input type="email" name="" id="">
-                    <textarea name="comment" id="" ></textarea>
-                    <button type="submit">post comment</button>
+                        <legend class="sr-only">Make a comment</legend>
+                        <label class="sr-only" for="name">name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                        />
+                        <label class="sr-only" for="email-address"></label>
+                        <input
+                            type="email"
+                            name="email-address"
+                            id="email-address"
+                            placeholder="Email Address"
+                        />
+                        <label class="sr-only" for="comment"></label>
+                        <textarea name="comment" id="comment">Comment</textarea>
+                        <button type="submit">post comment</button>
                     </fieldset>
                 </form>
             </section>
         </main>
-</body>
+        <footer>
+            <p>Copyright © 2019 HackerYou</p>
+            <a href="https://junocollege.com/">Created at Juno College</a>
+        </footer>
+    </body>
 </html>

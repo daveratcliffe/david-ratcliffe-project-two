@@ -1,0 +1,32 @@
+.space div {
+    display: grid;
+    padding: 75px 0 32px 0;
+    grid-template-columns: repeat(20, 1fr);
+    // grid-template-columns: 1fr, 4fr;
+    // gap: 40px;
+    grid-template-rows: 150px 300px;
+    figure {
+        grid-column: 1 / 6;
+        margin: 0;
+        padding-top: 30px;
+        img {
+            box-shadow: -15px 15px 0px 0px $tertiary;
+        }
+    }
+    article {
+        grid-column: 8 / 21;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h2 {
+            @include heading2($tertiary);
+        }
+        p {
+            @include paragraph();
+            padding-bottom: 30px;
+        }
+        a {
+            @include anchor-button(white, black)
+        }
+    }
+}

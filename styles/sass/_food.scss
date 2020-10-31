@@ -1,0 +1,63 @@
+.food {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(2, auto);
+    background-color: $secondary;
+    column-gap: 50px;
+    position: relative;
+    padding: 100px 0 100px 0;
+    figure {
+    margin: 0;
+    }
+    h3 { 
+        @include heading3;
+    }
+    p {
+        @include paragraph();
+        padding-bottom: 50px;
+    }
+    a {
+        @include anchor-button(black, $tertiary);
+    }
+}
+
+.burger-image {
+    padding-right: 50px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: absolute;
+    top: -150px;
+    img {
+        box-shadow: 15px 15px 0px 0px $tertiary;
+    }
+}
+.burger-copy {
+    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+}
+
+.something-new-image {
+    padding-left: 50px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: absolute;
+    bottom: -150px;
+img {
+    box-shadow: -15px 15px 0px 0px $tertiary;
+}
+}
+.something-new-copy {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    p {
+        text-align: right;
+    }
+    }

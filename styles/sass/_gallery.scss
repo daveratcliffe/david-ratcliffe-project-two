@@ -1,0 +1,15 @@
+.gallery {
+    background-color: $secondary;
+    height: auto;
+    div {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        figure {
+            margin: 0;
+        }
+    }
+    
+}

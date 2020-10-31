@@ -1,0 +1,24 @@
+
+//**************HOME PAGE************** 
+header {
+    @include background-img(url(../../the-restaurant-mall-assets/home-header.jpg));
+}
+.blog-header {
+    @include background-img(url(../../the-restaurant-mall-assets/blog-header.jpg));
+}
+
+h1 {
+    margin: 0;
+    font-family: $primary-font;
+    font-size: 6.9rem;
+    font-weight: 600;
+    color: white;
+    max-width: 400px;
+    text-transform: uppercase;
+    span {
+        background-color: white;
+        padding-top: 16px;
+        padding-right: 3px;
+        color: black;
+    }
+}

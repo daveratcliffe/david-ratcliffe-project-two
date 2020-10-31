@@ -4,88 +4,112 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Restaurant</title>
-        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0e8994a7ea.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
+            <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>The Restaurant Mall</h1>
+            <h1>The <span>Restaurant</span> Mall</h1>
+            </div>
         </header>
         <main>
-            <section class="info-blurbs">
+            <section id="about" class="about">
                 <figure>
-                    <img src="" alt="" />
+                    <img src="./the-restaurant-mall-assets/home-box-header.png" alt="" />
                 </figure>
-                <ul>
-                    <li>
-                        <span></span>
-                        <h2>location</h2>
-                        <p></p>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-phone"></i></span>
-                        <h2>community</h2>
-                        <p></p>
-                    </li>
-                    <li>
-                        <i></i>
-                        <h2>blog</h2>
-                        <p></p>
-                    </li>
-                    <li>
-                        <i></i>
-                        <h2>get in touch  </h2>
-                        <p></p>
-                    </li>
-                </ul>
+                <div class="wrapper">
+                    <ul>
+                        <li>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                            <h2>location</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, facere dolorum dolore, soluta hic dignissimos unde voluptate illo ea veniam!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-users"></i></span>
+                            <div>
+                            <h2>community</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, facere dolorum dolore, soluta hic dignissimos unde voluptate illo ea veniam!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-file"></i></span>
+                            <div>
+                            <h2>blog</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, facere dolorum dolore, soluta hic dignissimos unde voluptate illo ea veniam!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-phone"></i></span>
+                            <div>
+                            <h2>get in touch  </h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, facere dolorum dolore, soluta hic dignissimos unde voluptate illo ea veniam!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="food">
-                <div>
-                    <img src="" alt="" />
-                    <h2></h2>
-                    <p></p>
-                    <figure>
+                <!-- <div class="best-burger"> -->
+                    <figure class="burger-image"><img src="./the-restaurant-mall-assets/left-image.jpg" alt="" />
+                    </figure>
+                    <div class="burger-copy wrapper">
+                        <h3>best burgers</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima enim exercitationem numquam quas libero tenetur vel, sapiente voluptate id nihil nostrum mollitia ad at cum, assumenda amet molestias adipisci nam.</p>
                         <a href="">read more</a>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="something-new"> -->
+                    <figure class="something-new-image">
+                        <img src="./the-restaurant-mall-assets/right-image.jpg" alt="" />
                     </figure>
-                </div>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                    <a href="">read more</a>
-                    <figure>
-                        <img src="" alt="" />
-                    </figure>
-                </div>
+                    <div class="something-new-copy wrapper">
+                        <h3>try something new</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima enim exercitationem numquam quas libero tenetur vel, sapiente voluptate id nihil nostrum mollitia ad at cum, assumenda amet molestias adipisci nam.</p>
+                        <a href="">read more</a>
+                    </div>
+                <!-- </div> -->
             </section>
             <section class="gift-card">
-                <h2></h2>
-                <p></p>
+                <h3>win a $100 gift card</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolore id corporis consequatur facilis? Assumenda sint harum eligendi vero enim, odio officiis provident minima incidunt velit quidem possimus nobis quas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ab est dignissimos sint consequatur asperiores?</p>
                 <a href="">find out more</a>
             </section>
-            <section class="mid-banner">
-                <img src="" alt="" />
+            <section class="banner">
+                <img src="./the-restaurant-mall-assets/banner.jpg" alt="" />
             </section>
-            <section class="nature-space">
-                <figure><img src="" alt="" /></figure>
-                <article>
-                    <h2></h2>
-                    <p></p>
-                    <a href="">find out more</a>
-                </article>
+            <section class="space">
+                <div class="wrapper">
+                    <figure><img src="./the-restaurant-mall-assets/square-image.jpg" alt="" /></figure>
+                    <article>
+                        <h2>bring nature in spaces</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sequi repellat ipsam libero! Molestiae omnis dolorum reprehenderit, dicta voluptatem ab magnam itaque enim nam ad animi, sed distinctio. Consectetur dolores ipsum ea saepe deleniti, quam atque blanditiis vitae ipsa quidem placeat id, itaque velit nobis voluptate! Nobis dolorum eligendi incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, saepe itaque culpa.</p>
+                        <a href="">find out more</a>
+                    </article>
+                </div>
             </section>
             <section class="gallery">
-                <figure><img src="" alt="" /></figure>
-                <figure><img src="" alt="" /></figure>
-                <figure><img src="" alt="" /></figure>
+                <div class="wrapper">
+                <figure><img src="./the-restaurant-mall-assets/gallery-image-1.jpg" alt="" /></figure>
+                <figure><img src="./the-restaurant-mall-assets/gallery-image-2.jpg" alt="" /></figure>
+                <figure><img src="./the-restaurant-mall-assets/gallery-image-3.jpg" alt="" /></figure>
+                </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Copyright © 2019 HackerYou</p>
+            <a href="https://junocollege.com/">Created at Juno College</a>
+        </footer>
     </body>
 </html>

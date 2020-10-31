@@ -1,0 +1,48 @@
+.about {
+    position: relative;
+    padding-bottom: 100px;
+    figure {
+    margin: 0;
+    width: 51%;
+    position: absolute;
+    top: -455px;
+    right: 0px;
+    }
+}
+
+.about ul {
+    padding-top: 225px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    li {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 10px;
+        span{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiary;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            i {
+                font-size: 2.5rem;
+            }
+        }
+        div {
+            grid-column: 2 / 13;
+            h2 {
+            @include heading2(white);
+            min-width: 330px;
+            }
+            p {
+                @include paragraph();
+            }
+        }
+        
+    }
+}
