@@ -4,51 +4,78 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact</title>
-        <link rel="stylesheet" href="./styles/style.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/0e8994a7ea.js" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/0e8994a7ea.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a class="current" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Get in Touch</h1>
+        <header class="contact-header">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>
+                            <a class="current" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>Get in Touch</h1>
+            </div>
         </header>
-        <main>
-            <aside>
+        <main class="contact">
+            <aside class="contact-aside wrapper">
                 <ul>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </li>
                 </ul>
+                <address class="email">info@gmail.com</address>
+                <address>
+                    123-456-7870 123 Queen Street West, Unit 10 Toronto, Ontario
+                    M5V295
+                </address>
             </aside>
-            <form action="" class="pizzaForm clearfix">
-                <fieldset>
-                    <legend>Tell us about you!</legend>
-                    <label for="firstName">First Name</label>
-                    <input
-                        type="text"
-                        name="firstName"
-                        placeholder="First name here"
-                        id="firstName"
-                    />
-
-                    <label for="lastName">Last Name</label>
-                    <input
-                        type="text"
-                        name="lastName"
-                        placeholder="Last name here"
-                        id="lastName"
-                    />
-                </fieldset>
-            </form>
+            <!-- <section class="wrapper"> -->
+                <form action="send-email">
+                    <fieldset class="contact-fieldset wrapper">
+                        <legend class="sr-only">Send an email</legend>
+                        <label class="sr-only" for="name">name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                        />
+                        <label class="sr-only" for="email-address"></label>
+                        <input
+                            type="email"
+                            name="email-address"
+                            id="email-address"
+                            placeholder="Email Address"
+                        />
+                        <label class="sr-only" for="message"></label>
+                        <textarea name="message" id="message">Message</textarea>
+                        <button type="submit">submit</button>
+                    </fieldset>
+                </form>
+            <!-- </section> -->
         </main>
         <footer>
             <p>Copyright © 2019 HackerYou</p>

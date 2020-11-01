@@ -22,6 +22,7 @@
 }
 
 .burger-image {
+    grid-area: burger-image;
     padding-right: 50px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -32,7 +33,7 @@
     }
 }
 .burger-copy {
-    
+    grid-area: burger-copy;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: flex;
@@ -42,6 +43,7 @@
 }
 
 .something-new-image {
+    grid-area: something-new-image;
     padding-left: 50px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -52,6 +54,7 @@ img {
 }
 }
 .something-new-copy {
+    grid-area: something-new-copy;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: flex;
@@ -60,4 +63,7 @@ img {
     p {
         text-align: right;
     }
+    h3 {
+        text-align: right;
     }
+}

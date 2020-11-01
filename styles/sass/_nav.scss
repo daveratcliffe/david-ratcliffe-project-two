@@ -1,16 +1,26 @@
-ul {
-    list-style-type: none;
-    display: flex;
-    padding: 50px 0 50px 0;
-    li {
-        font-family: $primary-font;
-        font-size: 2rem;
-        a {
-            display: inline-block;
-            padding: 20px;
-            position: relative;
-            text-decoration: none;
-            color: white;
+nav {
+    position: relative;
+    input,
+    label {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        visibility: hidden;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        padding: 50px 0 50px 0;
+        li {
+            font-family: $primary-font;
+            font-size: 2rem;
+            a {
+                display: inline-block;
+                padding: 20px;
+                position: relative;
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
@@ -19,4 +29,67 @@ a:focus,
 .current {
     text-decoration: underline;
     text-decoration-color: $tertiary;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        .open {
+            visibility: visible;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked ~ div.nav-menu {
+            right: 0;
+        }
+        input[type="checkbox"]:checked ~ .open {
+            visibility: hidden;
+        }
+        .nav-menu {
+            position: fixed;
+            background-color: rgba(196, 212, 204, .9);
+            width: 55%;
+            right: -58%;
+            transition: all 0.5s;
+            z-index: 30;
+            margin: 0 auto;
+            text-align: center;
+            top: 0;
+            height: 100vh;
+            box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.5);
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    display: block;
+                    text-align: center;
+                    a {
+                        display: block;
+                        padding: 30px;
+                        font-size: 3rem;
+                        color: black;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    a:hover,
+                    a:focus,
+                    .current {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .nav-menu .close {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: visible;
+        font-size: 3.5rem;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 15px;
+        cursor: pointer;
+        color: black;
+    }
+    }
 }
