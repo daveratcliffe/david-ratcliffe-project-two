@@ -17,10 +17,11 @@ body {
 
 @mixin background-img($image-source) {
     background-image: $image-source;
-    min-height: 880px;
+    height: 75vh;
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 @mixin heading1 {
     margin: 0;
     font-family: $primary-font;

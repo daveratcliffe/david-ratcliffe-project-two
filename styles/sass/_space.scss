@@ -2,8 +2,6 @@
     display: grid;
     padding: 75px 0 32px 0;
     grid-template-columns: repeat(20, 1fr);
-    // grid-template-columns: 1fr, 4fr;
-    // gap: 40px;
     grid-template-rows: 150px 300px;
     figure {
         grid-column: 1 / 6;

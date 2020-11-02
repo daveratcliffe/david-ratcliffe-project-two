@@ -73,17 +73,26 @@
         flex-direction: column;
     }
 }
+@media screen and (max-width: 605px) {
+.about {
+        figure {
+            top: -250px;
+        }
+    }
+}
 
 @media screen and (max-width: 550px) {
     .main-header { 
         background-position: 50%;
+        max-height: 480px;
         h1 {
             text-shadow: 2px 2px 2px rgba(0,0,0,0.44);
+            width: 333px;
         }
     }
     .about {
         figure {
-            top: -150px;
+            top: -200px;
         }
     }
     .something-new-copy,

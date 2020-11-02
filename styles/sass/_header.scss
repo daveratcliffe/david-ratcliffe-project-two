@@ -17,6 +17,6 @@ header {
     @include background-img(url(../../the-restaurant-mall-assets/contact-header.jpg));
     h1 {
         @include heading1;
-        width: 800px;
+        max-width: 600px;
     }
 }

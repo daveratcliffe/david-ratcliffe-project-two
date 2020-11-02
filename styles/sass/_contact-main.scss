@@ -10,11 +10,14 @@
         align-items: flex-start;
         justify-content: center;
         ul {
+            display: flex;
+            list-style: none;
             padding-bottom: 0px;
             li {
                 a {
                     padding: 10px;
                     color: $tertiary;
+                    font-size: 2rem;
                 }
                 a:hover,
                 a:focus {
@@ -74,6 +77,65 @@
             font-family: $secondary;
             padding-top: 20px;
             padding-left: 20px;
+        }
+    }
+}
+@media screen and (max-width: 1355px) {
+    .contact-header {
+        height: 500px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        fieldset {
+            position: static;
+            margin-bottom: 100px;
+        }
+        aside {
+            position: static;
+            padding-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .contact-header {
+        background-size: cover;
+        h1 {
+            padding-top: 70px;
+            font-size: 5rem;
+        }
+    }
+    .contact {
+        aside {
+            padding-top: 50px;
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .contact-header {
+        height: 350px;
+    }
+    .contact {
+        fieldset {
+            padding: 20px;
+        }
+    }
+}
+@media screen and (max-width: 545px) {
+    .contact {
+        align-items: center;
+        aside {
+            align-items: center;
+            address {
+                text-align: center;
+            }
+        }
+        form {
+            max-width: 360px;
+            fieldset {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

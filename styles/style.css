@@ -310,7 +310,7 @@ a:focus,
           text-decoration-color: #ffd300;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   nav .open {
     visibility: visible;
     font-size: 3rem;
@@ -380,7 +380,7 @@ a:focus,
 
 header {
   background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
-  min-height: 880px;
+  height: 75vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -404,7 +404,7 @@ header h1 span {
 
 .blog-header {
   background-image: url(../../the-restaurant-mall-assets/blog-header.jpg);
-  min-height: 880px;
+  height: 75vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -421,7 +421,7 @@ header h1 span {
 
 .contact-header {
   background-image: url(../../the-restaurant-mall-assets/contact-header.jpg);
-  min-height: 880px;
+  height: 75vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -434,7 +434,7 @@ header h1 span {
   color: white;
   max-width: 400px;
   text-transform: uppercase;
-  width: 800px;
+  max-width: 600px;
 }
 
 .about {
@@ -891,13 +891,7 @@ footer p, footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-}
-
-.blog-post section .image-overlap {
-  position: absolute;
-  top: -300px;
-  right: 0px;
+  margin-top: -200px;
 }
 
 .blog-post section .image-overlap img {
@@ -906,10 +900,10 @@ footer p, footer a {
 }
 
 .blog-post section .border-container {
-  margin-top: 350px;
+  margin-top: 15px;
   border-left: 5px solid #ffd300;
   border-bottom: 5px solid #ffd300;
-  margin-left: 43.5px;
+  margin-left: -15px;
 }
 
 .blog-post section .border-container article {
@@ -980,6 +974,13 @@ aside figure .recent-posts-container ul {
 
 aside figure .recent-posts-container a {
   padding: 10px;
+  font-family: "Barlow", sans-serif;
+  color: white;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .comments {
@@ -1049,8 +1050,8 @@ aside figure .recent-posts-container a {
   cursor: pointer;
 }
 
-.blog-fieldset input[type=text],
-.blog-fieldset input[type=email] {
+.blog-fieldset input[type="text"],
+.blog-fieldset input[type="email"] {
   background-color: #2b331b;
   border: none;
   color: white;
@@ -1089,6 +1090,111 @@ aside figure .recent-posts-container a {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 1350px) {
+  .blog-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-post aside {
+    padding-top: 50px;
+  }
+  .blog-post aside figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-post aside figure img {
+    width: 80%;
+  }
+  .blog-post aside figure .recent-posts-container {
+    width: 80%;
+    position: static;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-post aside figure .recent-posts-container p {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .blog-post aside figure .recent-posts-container ul {
+    padding: 0;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: disc;
+    color: white;
+  }
+  .blog-post aside figure .recent-posts-container a {
+    padding: 10px;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .blog-post .image-overlap {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .comments {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blog-header {
+    background-size: cover;
+    background-position: 50%;
+  }
+  .blog-header h1 {
+    padding-top: 70px;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .blog-post form {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .blog-post form fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact {
   display: -ms-grid;
   display: grid;
@@ -1116,12 +1222,17 @@ aside figure .recent-posts-container a {
 }
 
 .contact aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
   padding-bottom: 0px;
 }
 
 .contact aside ul li a {
   padding: 10px;
   color: #ffd300;
+  font-size: 2rem;
 }
 
 .contact aside ul li a:hover,
@@ -1223,6 +1334,79 @@ aside figure .recent-posts-container a {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 1355px) {
+  .contact-header {
+    height: 500px;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact fieldset {
+    position: static;
+    margin-bottom: 100px;
+  }
+  .contact aside {
+    position: static;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-header {
+    background-size: cover;
+  }
+  .contact-header h1 {
+    padding-top: 70px;
+    font-size: 5rem;
+  }
+  .contact aside {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contact-header {
+    height: 350px;
+  }
+  .contact fieldset {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .contact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact aside {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact aside address {
+    text-align: center;
+  }
+  .contact form {
+    max-width: 360px;
+  }
+  .contact form fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .about figure {
     width: 75%;
@@ -1313,15 +1497,23 @@ aside figure .recent-posts-container a {
   }
 }
 
+@media screen and (max-width: 605px) {
+  .about figure {
+    top: -250px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .main-header {
     background-position: 50%;
+    max-height: 480px;
   }
   .main-header h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.44);
+    width: 333px;
   }
   .about figure {
-    top: -150px;
+    top: -200px;
   }
   .something-new-copy,
   .burger-copy {
